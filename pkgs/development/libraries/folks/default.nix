@@ -16,6 +16,7 @@
 , nss
 , dbus
 , libgee
+, telepathy-glib
 , evolution-data-server
 , libsecret
 , db
@@ -42,7 +43,6 @@ stdenv.mkDerivation rec {
 
   mesonFlags = [
     "-Ddocs=true"
-    "-Dtelepathy_backend=false"
   ];
 
   nativeBuildInputs = [
@@ -69,6 +69,7 @@ stdenv.mkDerivation rec {
     nspr
     nss
     readline
+    telepathy-glib
   ];
 
   propagatedBuildInputs = [
