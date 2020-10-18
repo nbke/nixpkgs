@@ -41,6 +41,7 @@ stdenv.mkDerivation rec {
 
   buildInputs = [
     xorg.libXres
+    xorg.libXpresent
     glib
     gsettings-desktop-schemas
     gtk3
