@@ -1797,6 +1797,8 @@ in {
 
   dominate = callPackage ../development/python-modules/dominate { };
 
+  donfig = callPackage ../development/python-modules/donfig { };
+
   dopy = callPackage ../development/python-modules/dopy { };
 
   dot2tex = callPackage ../development/python-modules/dot2tex { inherit (pkgs) graphviz; };
